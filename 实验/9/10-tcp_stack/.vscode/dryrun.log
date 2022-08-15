@@ -1,0 +1,13 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/lulu/Documents/network/9/10-tcp_stack'
+gcc -c -g -Wall -Wno-unused-variable -Wno-unused-function -Iinclude ip.c -o ip.o
+gcc -c -g -Wall -Wno-unused-variable -Wno-unused-function -Iinclude main.c -o main.o
+gcc -c -g -Wall -Wno-unused-variable -Wno-unused-function -Iinclude tcp.c -o tcp.o
+gcc -c -g -Wall -Wno-unused-variable -Wno-unused-function -Iinclude tcp_apps.c -o tcp_apps.o
+gcc -c -g -Wall -Wno-unused-variable -Wno-unused-function -Iinclude tcp_in.c -o tcp_in.o
+gcc -c -g -Wall -Wno-unused-variable -Wno-unused-function -Iinclude tcp_out.c -o tcp_out.o
+gcc -c -g -Wall -Wno-unused-variable -Wno-unused-function -Iinclude tcp_sock.c -o tcp_sock.o
+gcc -c -g -Wall -Wno-unused-variable -Wno-unused-function -Iinclude tcp_timer.c -o tcp_timer.o
+gcc -L. ip.o main.o tcp.o tcp_apps.o tcp_in.o tcp_out.o tcp_sock.o tcp_timer.o -o tcp_stack -lipstack -lpthread 
+make: Leaving directory '/home/lulu/Documents/network/9/10-tcp_stack'
+ 
