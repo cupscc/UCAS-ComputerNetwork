@@ -1,0 +1,137 @@
+ping -c 1 10.0.0
+.2[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pwireshark &
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[D[D[D[D[D[D[D[D[D[D[D[6P./hub[D[D[D[D[Diperf -c 10.0.0.
+1 -t 30[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[10Pclear[D[D[D[D[Diperf -s[D[D[D[D[D[D[D[Dping 10.0.0.2[D1[D[D[D[D[D[D[D[D[D[D[D[D[Diperf -c 10.0.0.
+1 -t 30[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[D[D[D[D[Diperf -s[D[D[D[D[D[D[D[Dping 10.0.0.3[D1[D[K[D[K[D[K[D[K[D[K[D[K[D[K[D[K[D[K[D[K[D[K[D[K[D[Khttp-se[D[K[D[K[D[K[D[K[D[K[D[K[D[K./http-server 
+GET /index.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+
+HTTP/1.0 301 Moved Permanently
+Location: https://10.0.0.1/index.html
+
+
+GET /index.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+
+Send Success, rsp_size: 53527
+GET /index.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+
+HTTP/1.0 301 Moved Permanently
+Location: https://10.0.0.1/index.html
+
+
+GET /index.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+
+Send Success, rsp_size: 53527
+GET /notfound.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+
+HTTP/1.0 301 Moved Permanently
+Location: https://10.0.0.1/notfound.html
+
+
+GET /notfound.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+
+GET /dir/index.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+
+HTTP/1.0 301 Moved Permanently
+Location: https://10.0.0.1/dir/index.html
+
+
+GET /dir/index.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+
+Send Success, rsp_size: 53527
+GET /index.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Range: bytes=100-200
+
+
+HTTP/1.0 301 Moved Permanently
+Location: https://10.0.0.1/index.html
+
+
+GET /index.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Range: bytes=100-200
+
+
+Send Success, rsp_size: 53540
+GET /index.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Range: bytes=100-
+
+
+HTTP/1.0 301 Moved Permanently
+Location: https://10.0.0.1/index.html
+
+
+GET /index.html HTTP/1.1
+Host: 10.0.0.1
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Range: bytes=100-
+
+
+Send Success, rsp_size: 53540
+^[OP^[OP
